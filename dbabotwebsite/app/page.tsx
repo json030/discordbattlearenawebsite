@@ -1,37 +1,34 @@
 import React from 'react';
 import Image from 'next/image';
-import Head from 'next/head'; // Importiere Head
+import Head from 'next/head'; // Importiere Head für die Meta-Tags
 
 const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Discord Battle Arena</title> {/* Titel der Seite */}
+        <title>Discord Battle Arena</title>
         <meta name="description" content="Tritt gegen andere in spannenden Battles an!" />
         <meta property="og:title" content="Discord Battle Arena" />
         <meta property="og:description" content="Tritt gegen andere in spannenden Battles an!" />
-        <meta property="og:image" content="https://i.imgur.com/CClJjJa.png" /> {/* Link zum Logo */}
-        <meta property="og:url" content="https://deine-domain.com" /> {/* Setze die richtige URL deiner Seite */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:image" content="https://i.imgur.com/CClJjJa.png" />
+        <meta property="og:url" content="https://discordbattlearena.vercel.app" /> {/* Hier deine Domain einfügen */}
       </Head>
-
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white">
-        <header className="mb-10">
+      <div className="min-h-screen flex flex-col bg-gray-900 text-white">
+        <header className="flex items-center justify-between p-4">
           <Image 
-            src="https://i.imgur.com/CClJjJa.png" // Der Link zu deinem Logo
-            alt="Discord Battle Arena Logo"
-            width={150}
-            height={150}
+            src="https://cdn.discordapp.com/attachments/1299033183798558743/1301580118787100772/ayMUl-u2SnG3Xqa8VKO5HQ.png" // Der Link zu deinem Logo
+            alt="Discord Battle Arena Logo" 
+            width={100} 
+            height={100} 
             className="rounded-full"
           />
-          <h1 className="text-5xl font-bold mt-4">Willkommen zur Discord Battle Arena!</h1>
-          <p className="text-xl mt-4">Tritt gegen andere in spannenden Battles an!</p>
+          <h1 className="text-5xl font-bold text-center flex-grow">Willkommen zur Discord Battle Arena!</h1>
         </header>
 
-        <main className="flex flex-col items-start">
-          <section className="mb-6">
-            <h2 className="text-3xl font-semibold">Features</h2>
-            <ul className="list-disc list-inside mt-4 text-lg">
+        <main className="flex-grow flex flex-col items-start justify-center px-8">
+          <section className="mb-4">
+            <h2 className="text-3xl font-semibold mb-2">Features</h2>
+            <ul className="list-disc list-inside text-lg">
               <li>Ranglisten</li>
               <li>Punktesystem</li>
               <li>Live-Battles</li>
@@ -39,34 +36,28 @@ const HomePage = () => {
             </ul>
           </section>
 
-          <section className="mb-6">
-            <h2 className="text-3xl font-semibold">So funktioniert es:</h2>
-            <p className="mt-4 text-lg">
+          <section className="mt-auto mb-4 text-lg text-left">
+            <h2 className="text-2xl font-semibold">So funktioniert es:</h2>
+            <p className="mt-2">
               Nutze die Befehle im Discord-Server, um an Battles teilzunehmen und Punkte zu sammeln!
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-3xl font-semibold">Werde Teil der Community!</h2>
-            <p className="mt-4 text-lg">
-              Trete unserem Discord-Server bei und kämpfe gegen andere Mitglieder!
-              <br />
-              <a href="https://discord.com/invite/X7EbcFr5" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-                Klicke hier, um beizutreten!
-              </a>
-              <Image 
-                src="https://i.imgur.com/266S6uA.png" 
-                alt="Discord Logo" 
-                width={75} 
-                height={75} 
-                className="inline-block ml-2"
-              />
             </p>
           </section>
         </main>
 
-        <footer className="mt-auto mb-4">
-          <p>&copy; {new Date().getFullYear()} Discord Battle Arena. Alle Rechte vorbehalten.</p>
+        <footer className="flex justify-between items-end px-8 py-4">
+          <div className="text-lg">
+            <h2 className="text-2xl font-semibold">Werde Teil der Community!</h2>
+            <a href="https://discord.com/invite/X7EbcFr5" className="flex items-center">
+              <Image 
+                src="https://i.imgur.com/266S6uA.png" // Discord Logo
+                alt="Discord Logo"
+                width={50} // Größe des Discord-Logos
+                height={50} 
+                className="mr-2"
+              />
+              Discord beitreten
+            </a>
+          </div>
         </footer>
       </div>
     </>
