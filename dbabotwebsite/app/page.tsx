@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Discord Battle Arena</title>
+        <title>Discord Battle Arena</title> {/* Titel des Tabs */}
         <meta name="description" content="Tritt gegen andere in spannenden Battles an!" />
         <meta property="og:title" content="Discord Battle Arena" />
         <meta property="og:description" content="Tritt gegen andere in spannenden Battles an!" />
@@ -20,7 +20,7 @@ const HomePage = () => {
             alt="Discord Battle Arena Logo" 
             width={100} 
             height={100} 
-            className="rounded-full"
+            className="rounded-full" // Rundes Logo
           />
           <h1 className="text-5xl font-bold text-center flex-grow">Willkommen zur Discord Battle Arena!</h1>
         </header>
@@ -51,9 +51,9 @@ const HomePage = () => {
               <Image 
                 src="https://i.imgur.com/266S6uA.png" // Discord Logo
                 alt="Discord Logo"
-                width={50} // Größe des Discord-Logos
-                height={50} 
-                className="mr-2"
+                width={75} // Größe des Discord-Logos
+                height={75} 
+                className="mr-2" // Abstand zum Text
               />
               Discord beitreten
             </a>
