@@ -11,12 +11,12 @@ const HomePage = () => {
         <meta property="og:title" content="Discord Battle Arena" />
         <meta property="og:description" content="Tritt gegen andere in spannenden Battles an!" />
         <meta property="og:image" content="https://i.imgur.com/CClJjJa.png" />
-        <meta property="og:url" content="https://discordbattlearena.vercel.app" /> {/* Hier deine Domain einfügen */}
+        <meta property="og:url" content="https://deine-domain.vercel.app" /> {/* Hier deine Domain einfügen */}
       </Head>
       <div className="min-h-screen flex flex-col bg-gray-900 text-white">
         <header className="flex items-center justify-between p-4">
           <Image 
-            src="https://cdn.discordapp.com/attachments/1299033183798558743/1301580118787100772/ayMUl-u2SnG3Xqa8VKO5HQ.png" // Der Link zu deinem Logo
+            src="https://cdn.discordapp.com/attachments/1299033183798558743/1301580118787100772/ayMUl-u2SnG3Xqa8VKO5HQ.png" // Logo von Discord Battle Arena
             alt="Discord Battle Arena Logo" 
             width={100} 
             height={100} 
@@ -51,8 +51,8 @@ const HomePage = () => {
               <Image 
                 src="https://i.imgur.com/266S6uA.png" // Discord Logo
                 alt="Discord Logo"
-                width={75} // Größe des Discord-Logos
-                height={75} 
+                width={112.5} // Größe des Discord-Logos (50% größer)
+                height={112.5} 
                 className="mr-2" // Abstand zum Text
               />
               Discord beitreten
