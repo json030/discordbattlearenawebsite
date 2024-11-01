@@ -4,9 +4,9 @@ import Image from 'next/image';
 const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-900 text-white">
-      <main className="flex-grow flex flex-row items-start justify-center px-8 py-10">
+      <main className="flex-grow flex flex-col md:flex-row items-start justify-center px-4 py-10">
         {/* Linke Seite: Features */}
-        <section className="flex flex-col w-1/2 pr-4">
+        <section className="flex flex-col w-full md:w-1/2 pr-0 md:pr-4 mb-4 md:mb-0">
           <h2 className="text-3xl font-semibold mb-4">Features</h2>
           <div className="space-y-4">
             <div className="bg-gray-800 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -33,7 +33,7 @@ const HomePage = () => {
         </section>
 
         {/* Rechte Seite: So funktioniert es */}
-        <section className="flex flex-col w-1/2 pl-4 text-lg">
+        <section className="flex flex-col w-full md:w-1/2 pl-0 md:pl-4 text-lg">
           <h2 className="text-3xl font-semibold mb-4 text-center">So funktioniert es:</h2>
           <p>
             Nutze die Befehle im Discord-Server, um an Battles teilzunehmen und Punkte zu sammeln! 
@@ -65,3 +65,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
